@@ -51,11 +51,12 @@ Please generate interview questions and all possible interview rounds following 
         <>
            {interviewRounds.length === 0 && (
                 <form onSubmit={handleSubmit}>
-                    <label htmlFor="message">Message:</label>
+                    <label htmlFor="message">Enter the Role you want to Interview for:</label>
                     <textarea
                         id="message"
                         name="message"
                         value={formData.message}
+                        placeholder="Enter the role you want to interview for"
                         onChange={handleChange}
                     />
                     <br />
